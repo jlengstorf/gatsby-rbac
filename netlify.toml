@@ -8,7 +8,7 @@
   to = "/secret"
   status = 200
   force = true
-  conditions = { Role = ["secret"] }
+  conditions = { Role = ["user"] }
 
 [[redirects]]
   from = "/secret"
