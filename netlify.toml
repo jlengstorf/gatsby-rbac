@@ -2,3 +2,16 @@
   command = "gatsby build"
   publish = "public"
   functions = "functions"
+
+[[redirects]]
+  from = "/secret"
+  to = "/secret"
+  status = 200
+  force = true
+  conditions = { Role = ["secret"] }
+
+[[redirects]]
+  from = "/secret"
+  to = "/login"
+  status = 401
+  force = true
